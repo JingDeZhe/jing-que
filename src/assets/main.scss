@@ -1,0 +1,21 @@
+@import './base.scss';
+
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+.species {
+  &-paint {
+    --at-apply: h-full overflow-hidden flex flex-col;
+    .canvas {
+      --at-apply: m-[20px] flex-1 overflow-hidden relative flex justify-center;
+      svg {
+        border: 1px dashed #aaa;
+      }
+    }
+  }
+  &-viewer {
+    --at-apply: h-full overflow-hidden;
+  }
+}
