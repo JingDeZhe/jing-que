@@ -5,14 +5,60 @@
   overflow: hidden;
 }
 
+.btn {
+  --focus-color: #36333d;
+  border: 1px solid #3b3b3b;
+  --at-apply: relative overflow-hidden px-4 py-2 outline-0 rounded-0 transition z-[1];
+  &:hover {
+    --at-apply: text-white border-color-[var(--focus-color)];
+  }
+  &::before {
+    content: '';
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transform: translateX(-101%);
+    --at-apply: absolute inset-0 z-[-1] bg-[var(--focus-color)];
+  }
+  &:hover::before {
+    transform: translateX(0);
+  }
+}
+
 .species {
   &-paint {
-    --at-apply: h-full overflow-hidden flex flex-col;
+    --at-apply: h-full overflow-hidden flex flex-col bg-zinc-200;
     .canvas {
-      --at-apply: m-[20px] flex-1 overflow-hidden relative flex justify-center;
-      svg {
-        border: 1px dashed #aaa;
+      --at-apply: m-[20px] flex-1 overflow-hidden grid grid-cols-[260px_1fr] width-max mx-auto;
+      &-config {
+        border-right: 1px solid #41b883;
+        --at-apply: bg-zinc-700 text-white p-5;
+        &_label {
+          &::after {
+            content: ' :';
+          }
+        }
       }
+      &-sketch {
+        --at-apply: flex justify-center relative;
+        svg {
+          --at-apply: bg-white shadow;
+          polygon {
+            &:hover,
+            &.active {
+              stroke: #41b883;
+              stroke-width: 0.5;
+            }
+          }
+        }
+        .refer-img {
+          --at-apply: absolute top-0 left-0 h-full w-full opacity-50 select-none pointer-events-none
+            object-cover;
+        }
+      }
+    }
+
+    .tools {
+      --at-apply: p-2 flex items-center gap-2 justify-end;
     }
   }
   &-viewer {
