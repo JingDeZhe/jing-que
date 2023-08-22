@@ -1,7 +1,7 @@
 export default [
   {
-    id: 'Z0oC1Yij2nMphpDMeAwWu',
-    color: '#303030',
+    id: 'JoBzsJBydQLlpBM6zA0G7',
+    color: '#3e3737',
     points: [
       {
         index: 0,
@@ -21,8 +21,8 @@ export default [
     ],
   },
   {
-    id: 'wgjTO30jXhAs8oBNqa51z',
-    color: '#303030',
+    id: 'BRTSLbQO0XqQYJWd11r5u',
+    color: '#575252',
     points: [
       {
         index: 0,
@@ -42,8 +42,8 @@ export default [
     ],
   },
   {
-    id: 'RG6TOw8EYmcVPar6wQJql',
-    color: '#303030',
+    id: '1MTrh3VdtKDgcRzWpIlHQ',
+    color: '#5c5151',
     points: [
       {
         index: 0,
@@ -63,7 +63,7 @@ export default [
     ],
   },
   {
-    id: 'qaH9ZdAitCT2I_4W4xYzn',
+    id: 'XB-LWeAzXKzFaCNnN9aF9',
     color: '#303030',
     points: [
       {
@@ -84,8 +84,8 @@ export default [
     ],
   },
   {
-    id: 'IDTj7Jhmlp9PA_t_BVTZq',
-    color: '#303030',
+    id: 'OlxPWX1eTFr8181DdHE7A',
+    color: '#353131',
     points: [
       {
         index: 0,
@@ -105,8 +105,8 @@ export default [
     ],
   },
   {
-    id: 'DxtZmsKA5XrL__LOsPpYT',
-    color: '#303030',
+    id: '2fMiyL0yv2ayw3nyQKnhQ',
+    color: '#332e2e',
     points: [
       {
         index: 0,
@@ -126,7 +126,7 @@ export default [
     ],
   },
   {
-    id: 'TSPdJKKSTOeOc82lu6r6s',
+    id: 'AK_OLQiK1dCe_bXqNEte6',
     color: '#303030',
     points: [
       {
@@ -147,7 +147,7 @@ export default [
     ],
   },
   {
-    id: '_pSbDs3R7Unkh1GGMcY1X',
+    id: 'S1Ik4hl2AL76b4dJDncyd',
     color: '#303030',
     points: [
       {
@@ -168,7 +168,7 @@ export default [
     ],
   },
   {
-    id: 'aqH5kU1nV4Pa473z4CjoO',
+    id: 'U-1p9sOeqQV4zbDBX_iFR',
     color: '#303030',
     points: [
       {
@@ -189,8 +189,8 @@ export default [
     ],
   },
   {
-    id: 'j1y0uugnAgWwq3XCcz_No',
-    color: '#303030',
+    id: 'Hs8FEQ6HTmvSMbrKAHpfn',
+    color: '#2d2a2a',
     points: [
       {
         index: 0,
@@ -210,8 +210,8 @@ export default [
     ],
   },
   {
-    id: 's4Y9Yud5PbaouMbLWQTsk',
-    color: '#303030',
+    id: 'KY5K0-N7ttTj3pQLlf4sH',
+    color: '#2d2a2a',
     points: [
       {
         index: 0,
@@ -231,7 +231,7 @@ export default [
     ],
   },
   {
-    id: 'qSU1UhtjgdWRJFRC0J-5Y',
+    id: 'Cv_KGlOc6Q1Yn8c6r_Kuo',
     color: '#303030',
     points: [
       {
@@ -252,7 +252,7 @@ export default [
     ],
   },
   {
-    id: 'iWLO47EHwjKjCp62ECf7l',
+    id: 'nMHMPvUTLW2OlDsqTWLF5',
     color: '#303030',
     points: [
       {
@@ -273,7 +273,7 @@ export default [
     ],
   },
   {
-    id: '67izVpt0984CXbY2ovSnB',
+    id: 'Su6zkKZoC5lix0NvRUWk7',
     color: '#303030',
     points: [
       {
@@ -294,7 +294,7 @@ export default [
     ],
   },
   {
-    id: 'GcV2of1PTMqyC9sxqz0Dx',
+    id: 'vDS7LBACU_fodnS9A5eTB',
     color: '#303030',
     points: [
       {
@@ -315,8 +315,8 @@ export default [
     ],
   },
   {
-    id: 'JW4TWe38WUktEsu8B1CWM',
-    color: '#303030',
+    id: 'Tlq8L4XWvbuGb3I59lGMz',
+    color: '#615c5c',
     points: [
       {
         index: 0,
@@ -336,7 +336,7 @@ export default [
     ],
   },
   {
-    id: 'S-PUDQ0GSkiR6JD1gv_HT',
+    id: 'tpewSPwsySt7QanIyQA78',
     color: '#303030',
     points: [
       {
@@ -357,7 +357,7 @@ export default [
     ],
   },
   {
-    id: 'U0WD3kMRCotx1D_AimnwB',
+    id: 'O-f6ab_P-Ml6Fj0Ey8Mv3',
     color: '#303030',
     points: [
       {
@@ -378,7 +378,7 @@ export default [
     ],
   },
   {
-    id: 'w4QZ_rJRTNBG_BXCDykji',
+    id: 'WwtNFVKc8Kptz0e5y7YYY',
     color: '#303030',
     points: [
       {
@@ -399,7 +399,7 @@ export default [
     ],
   },
   {
-    id: 'R9dfJQsLfBvv5fNe9QDgx',
+    id: 'CTRADDLuj3OckPqAOA-qK',
     color: '#303030',
     points: [
       {
@@ -420,7 +420,7 @@ export default [
     ],
   },
   {
-    id: 'np7Scd8VUlh1BWoY8kEgp',
+    id: 'NBhPQIpGvIpMTE1W1wRzI',
     color: '#303030',
     points: [
       {
@@ -441,7 +441,7 @@ export default [
     ],
   },
   {
-    id: 'J4iusoBZlvbJV7n4m6gQl',
+    id: 'OTcL5XUZZR8OTbuSPSsOs',
     color: '#303030',
     points: [
       {
@@ -462,7 +462,7 @@ export default [
     ],
   },
   {
-    id: 'sbfENT271DQHtxzQLaorr',
+    id: 'DjTDHn02bP6f7SU1rVkNB',
     color: '#303030',
     points: [
       {
@@ -483,7 +483,7 @@ export default [
     ],
   },
   {
-    id: 'WC7fGwSfOuneXPZ_I9E31',
+    id: 'RKrsYrvuOmEHPeDh36q6m',
     color: '#303030',
     points: [
       {
@@ -504,7 +504,7 @@ export default [
     ],
   },
   {
-    id: 'QIU5Gg0ylAdsQn6jDtTyD',
+    id: 'RQN4adsH4NZ7JhVKj5Ht1',
     color: '#303030',
     points: [
       {
@@ -525,8 +525,8 @@ export default [
     ],
   },
   {
-    id: 'wUWe7BoCk156A4KlIq7uW',
-    color: '#303030',
+    id: 'pr2lpbpzWub-BIaI_EYYL',
+    color: '#615151',
     points: [
       {
         index: 0,
@@ -546,8 +546,8 @@ export default [
     ],
   },
   {
-    id: 'FcwFt4y5Edm5g06dCrvOG',
-    color: '#303030',
+    id: 'bICDB9CjEVhC3k6eKnaAj',
+    color: '#5c5151',
     points: [
       {
         index: 0,
@@ -567,7 +567,7 @@ export default [
     ],
   },
   {
-    id: 'hs4Rda0lHrf8sbXOlvrNF',
+    id: 'Hoy34KBNhs2Npm-ONEjY7',
     color: '#303030',
     points: [
       {
@@ -588,7 +588,7 @@ export default [
     ],
   },
   {
-    id: '0AP2YfxKgjNL5ykjUHGK-',
+    id: 'EDwbSevuAeQOC_YciYhjJ',
     color: '#303030',
     points: [
       {
@@ -609,7 +609,7 @@ export default [
     ],
   },
   {
-    id: 'xTmI4d6BP5JfZmigOH8KF',
+    id: 'q5taQ3MPbX9Kjy8LVv5wK',
     color: '#303030',
     points: [
       {
@@ -630,7 +630,7 @@ export default [
     ],
   },
   {
-    id: 'd-oiU5iIY-Zy77llfm3ZL',
+    id: 'D0j9dP-nC8SXAezPtQTh_',
     color: '#303030',
     points: [
       {
@@ -651,8 +651,8 @@ export default [
     ],
   },
   {
-    id: 'JHyGoudcvWrZ1nDckyxp2',
-    color: '#303030',
+    id: 'V6KFqsk6OdWgdP1a6pDS-',
+    color: '#4d4747',
     points: [
       {
         index: 0,
@@ -672,7 +672,7 @@ export default [
     ],
   },
   {
-    id: 'D8fbdpdc8ZbFIW4i63HHV',
+    id: 'txyf6MjznLJULft-AlNeJ',
     color: '#303030',
     points: [
       {
@@ -693,7 +693,7 @@ export default [
     ],
   },
   {
-    id: 'zTdGTBr0bL24s5YRHkPOI',
+    id: 'MCZ0bVKU9rUs89c3m0SQF',
     color: '#303030',
     points: [
       {
@@ -714,8 +714,8 @@ export default [
     ],
   },
   {
-    id: 'DVZPbtmbyNoz-eAfbWZqX',
-    color: '#303030',
+    id: 'jN2b4XLVVd7ClEo6m4esH',
+    color: '#5c4242',
     points: [
       {
         index: 0,
@@ -735,7 +735,7 @@ export default [
     ],
   },
   {
-    id: 'n3bdVCdfzKO3rDZB1vm7w',
+    id: 'C_fWBV0Y_mtpoqSX0gXFA',
     color: '#303030',
     points: [
       {
@@ -756,8 +756,8 @@ export default [
     ],
   },
   {
-    id: 'VGpOlYFzD4n1Td_dUee2C',
-    color: '#303030',
+    id: 'l5iIjYbRVjJOQlmNfRr-e',
+    color: '#845252',
     points: [
       {
         index: 0,
@@ -777,8 +777,8 @@ export default [
     ],
   },
   {
-    id: 'vpfB8Pw36UI2wuAi-jiuU',
-    color: '#303030',
+    id: 'Ne7AkqwFpqvPGIrMRH5qa',
+    color: '#a16363',
     points: [
       {
         index: 0,
@@ -798,8 +798,8 @@ export default [
     ],
   },
   {
-    id: 'U7PlTdSutO6jCYPG7I0gg',
-    color: '#303030',
+    id: 'QkYxJ-3MVJi6Bqw94UdCk',
+    color: '#704242',
     points: [
       {
         index: 0,
@@ -819,8 +819,8 @@ export default [
     ],
   },
   {
-    id: 'nLSg4MlBALi6nWw7pCeNM',
-    color: '#303030',
+    id: 'SVyT5wLERKkCfTL2bIoIE',
+    color: '#883f3f',
     points: [
       {
         index: 0,
@@ -840,8 +840,8 @@ export default [
     ],
   },
   {
-    id: 'YSDh9whiTOkT-ktcXOVhk',
-    color: '#303030',
+    id: '3MLEMWSAoDVONdYhX2eU_',
+    color: '#6f4d4d',
     points: [
       {
         index: 0,
@@ -861,8 +861,8 @@ export default [
     ],
   },
   {
-    id: 'zbKe5WFNAOTlA6lwJJ7dM',
-    color: '#303030',
+    id: 'yzinsScKkzRieW9hdvuif',
+    color: '#7e5e44',
     points: [
       {
         index: 0,
@@ -882,8 +882,8 @@ export default [
     ],
   },
   {
-    id: '3RrErjQUpuHQBGx8ZUVLl',
-    color: '#303030',
+    id: '0R8ZXOCPnAdH1tnKwhez5',
+    color: '#8e5757',
     points: [
       {
         index: 0,
@@ -903,28 +903,7 @@ export default [
     ],
   },
   {
-    id: '5bn26EAmaNlAeKDLFNMlJ',
-    color: '#303030',
-    points: [
-      {
-        index: 0,
-        x: 82.79612807939193,
-        y: 42.8283615012287,
-      },
-      {
-        index: 1,
-        x: 84.97179275885041,
-        y: 51.5310202190626,
-      },
-      {
-        index: 2,
-        x: 75.06043144131735,
-        y: 45.729247740506665,
-      },
-    ],
-  },
-  {
-    id: 'QmgefwVc0biMMm9-8emnP',
+    id: '9ttz23Qw4ognikB0OB3j4',
     color: '#303030',
     points: [
       {
@@ -945,7 +924,7 @@ export default [
     ],
   },
   {
-    id: 'KbUX7gz2Cmob3Yg7PrbAU',
+    id: 'UpIzfCCvpm1lIuTD9pn7c',
     color: '#303030',
     points: [
       {
@@ -966,7 +945,7 @@ export default [
     ],
   },
   {
-    id: 'lhK6re96t0nLbCaSz_UOw',
+    id: 'iKn--9ku3HT5pZn6NMSsH',
     color: '#303030',
     points: [
       {
@@ -987,7 +966,7 @@ export default [
     ],
   },
   {
-    id: 'h5RNvJXgoUnDsAoPxd5vQ',
+    id: 'eYNtA59lzeuBZFEqY3DI3',
     color: '#303030',
     points: [
       {
@@ -1008,7 +987,7 @@ export default [
     ],
   },
   {
-    id: 'l46-Jg8YhnOaTkeCoOA4P',
+    id: '0a-TP5VZZciljz5tAQ92s',
     color: '#303030',
     points: [
       {
@@ -1029,91 +1008,7 @@ export default [
     ],
   },
   {
-    id: 'mQg7U5oxTm75ZNg7GwLGq',
-    color: '#303030',
-    points: [
-      {
-        index: 0,
-        x: 85.33440353876016,
-        y: 51.047539179182934,
-      },
-      {
-        index: 1,
-        x: 83.52134963921142,
-        y: 54.67364697828039,
-      },
-      {
-        index: 2,
-        x: 78.92827976035464,
-        y: 52.014501258942246,
-      },
-    ],
-  },
-  {
-    id: '6uWCzHA8m938642q7X7XV',
-    color: '#303030',
-    points: [
-      {
-        index: 0,
-        x: 83.76309015915126,
-        y: 54.190165938400725,
-      },
-      {
-        index: 1,
-        x: 89.5648626377072,
-        y: 53.9484254184609,
-      },
-      {
-        index: 2,
-        x: 84.97179275885041,
-        y: 50.08057709942361,
-      },
-    ],
-  },
-  {
-    id: '3TndCl6zRz3regOIXGRm1',
-    color: '#303030',
-    points: [
-      {
-        index: 0,
-        x: 84.97179275885041,
-        y: 50.08057709942361,
-      },
-      {
-        index: 1,
-        x: 90.04834367758684,
-        y: 49.35535553960412,
-      },
-      {
-        index: 2,
-        x: 89.5648626377072,
-        y: 53.34407411861132,
-      },
-    ],
-  },
-  {
-    id: 'wj8lgIBG-8VUyVWKTTLs_',
-    color: '#303030',
-    points: [
-      {
-        index: 0,
-        x: 89.5648626377072,
-        y: 53.585814638551156,
-      },
-      {
-        index: 1,
-        x: 87.14745743830889,
-        y: 54.55277671831047,
-      },
-      {
-        index: 2,
-        x: 83.2796091192716,
-        y: 53.9484254184609,
-      },
-    ],
-  },
-  {
-    id: '-vIE-E_zPwEaYkFaQIVAY',
+    id: 'p8_2lpQgqISn_utEHzKj0',
     color: '#303030',
     points: [
       {
@@ -1134,7 +1029,7 @@ export default [
     ],
   },
   {
-    id: 'PMXXBnrpeqyzgtn8fq7pO',
+    id: 'TcRxqol0vUrWi9_rJAqzM',
     color: '#303030',
     points: [
       {
@@ -1155,7 +1050,7 @@ export default [
     ],
   },
   {
-    id: 'iwBOdJ7H9pztHVtVu59dH',
+    id: 'Rhcg-bikW6yPNW8OeL-YB',
     color: '#303030',
     points: [
       {
@@ -1176,7 +1071,7 @@ export default [
     ],
   },
   {
-    id: 'GMgHVbBRMbu95OPc0RO6F',
+    id: '0IRE_F4AlqM4ZRleeXfLf',
     color: '#303030',
     points: [
       {
@@ -1197,7 +1092,7 @@ export default [
     ],
   },
   {
-    id: '0XRp_AGwtMQ7QJ3N5aENS',
+    id: 'Jhru23zp0OWL52UvOYaR0',
     color: '#303030',
     points: [
       {
@@ -1218,7 +1113,7 @@ export default [
     ],
   },
   {
-    id: 'DQgDcwX9WiykM1Uxm8IPV',
+    id: 'IWjJtSIDfWknznO4eh8Zy',
     color: '#303030',
     points: [
       {
@@ -1235,6 +1130,111 @@ export default [
         index: 2,
         x: 86.30136561851948,
         y: 46.696209820265985,
+      },
+    ],
+  },
+  {
+    id: 'h4cDpG3rHISnX48hZkLWg',
+    color: '#303030',
+    points: [
+      {
+        index: 0,
+        x: 75.62449142495443,
+        y: 45.00402618068717,
+      },
+      {
+        index: 1,
+        x: 83.11844754308918,
+        y: 41.136177861649884,
+      },
+      {
+        index: 2,
+        x: 85.53585274248748,
+        y: 51.6518904790325,
+      },
+    ],
+  },
+  {
+    id: 'DXIym3eee2F4GCJL7pO5K',
+    color: '#303030',
+    points: [
+      {
+        index: 0,
+        x: 79.3714694840218,
+        y: 50.805798659243095,
+      },
+      {
+        index: 1,
+        x: 83.60192858296884,
+        y: 53.10233359867149,
+      },
+      {
+        index: 2,
+        x: 85.29411222254765,
+        y: 49.959706839453695,
+      },
+    ],
+  },
+  {
+    id: 'yRNxSJDk7vr1MMMiSiNBl',
+    color: '#303030',
+    points: [
+      {
+        index: 0,
+        x: 83.360188063029,
+        y: 52.73972281876175,
+      },
+      {
+        index: 1,
+        x: 86.5028148222468,
+        y: 53.9484254184609,
+      },
+      {
+        index: 2,
+        x: 88.55760924173536,
+        y: 50.926668919213014,
+      },
+    ],
+  },
+  {
+    id: 'MJ5CWwFBfAodCTVD9Ji9i',
+    color: '#303030',
+    points: [
+      {
+        index: 0,
+        x: 82.87670702314934,
+        y: 52.256241778882085,
+      },
+      {
+        index: 1,
+        x: 88.92022002164511,
+        y: 48.50926371981471,
+      },
+      {
+        index: 2,
+        x: 89.52457132149468,
+        y: 50.201447359393526,
+      },
+    ],
+  },
+  {
+    id: 'WI7rYCLiLQeVNkOBe4mFl',
+    color: '#303030',
+    points: [
+      {
+        index: 0,
+        x: 89.52457132149468,
+        y: 50.201447359393526,
+      },
+      {
+        index: 1,
+        x: 86.98629586212647,
+        y: 52.73972281876175,
+      },
+      {
+        index: 2,
+        x: 83.60192858296884,
+        y: 51.89363099897234,
       },
     ],
   },

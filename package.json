@@ -10,6 +10,7 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "idb-keyval": "^6.2.1",
     "lodash-es": "^4.17.21",
     "nanoid": "^4.0.2",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.0",
+    "@types/animejs": "^3.1.7",
     "@types/lodash-es": "^4.17.8",
     "@types/node": "^18.17.5",
     "@types/numeral": "^2.0.2",

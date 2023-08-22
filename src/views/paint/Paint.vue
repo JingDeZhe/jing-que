@@ -88,7 +88,9 @@ function getPolygonPoints(specie: Specie) {
 
 const STORE_KEY_TMP = 'species_store_tmp'
 function saveTmp() {
-  set(STORE_KEY_TMP, cloneDeep(species.value))
+  const t = cloneDeep(species.value)
+  console.log(t)
+  set(STORE_KEY_TMP, t)
 }
 
 async function loadTmp() {
@@ -97,7 +99,6 @@ async function loadTmp() {
     v.id = nanoid()
   })
   species.value = d
-  console.log(cloneDeep(species.value))
   activeSpecie.value = undefined
 }
 
