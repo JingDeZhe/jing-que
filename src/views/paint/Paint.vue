@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue'
 import { set, get } from 'idb-keyval'
 import { cloneDeep } from 'lodash-es'
 import { nanoid } from 'nanoid'
-import panzoom from 'panzoom'
+// import panzoom from 'panzoom'
 
 const canvas = ref<HTMLElement>()
 const svg = ref<SVGElement>()
@@ -14,7 +14,7 @@ const isEditable = ref(true)
 
 const config = {
   tmpColor: '#FF5A3360',
-  defaultColor: '#8076a3',
+  defaultColor: '#303030',
 }
 
 onMounted(() => {
@@ -22,7 +22,7 @@ onMounted(() => {
   const size = height
   svg.value?.setAttribute('width', `${size}`)
   svg.value?.setAttribute('height', `${size}`)
-  panzoom(sketchBox.value!)
+  // panzoom(sketchBox.value!)
 })
 
 type PointInfo = { index: number; x: number; y: number }
@@ -51,6 +51,7 @@ function handleSelectPoint(e: MouseEvent) {
       const t = cloneDeep(tmpSpecie.value)
       species.value.push(t)
       activeSpecie.value = t
+      tmpSpecie.value.id = nanoid()
       tmpSpecie.value.points.splice(0)
     }
   } else {
@@ -93,9 +94,10 @@ function saveTmp() {
 async function loadTmp() {
   const d = (await get<Specie[]>(STORE_KEY_TMP)) || []
   d.forEach((v) => {
-    if (!v.id) v.id = nanoid()
+    v.id = nanoid()
   })
   species.value = d
+  console.log(cloneDeep(species.value))
   activeSpecie.value = undefined
 }
 

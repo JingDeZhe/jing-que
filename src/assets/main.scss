@@ -51,8 +51,12 @@
           }
         }
         .refer-img {
-          --at-apply: absolute top-0 left-0 h-full w-full opacity-50 select-none pointer-events-none
-            object-cover;
+          --padding: 50px;
+          top: var(--padding);
+          left: var(--padding);
+          width: calc(100% - 2 * var(--padding));
+          height: calc(100% - 2 * var(--padding));
+          --at-apply: absolute opacity-50 select-none pointer-events-none object-cover;
         }
       }
     }
