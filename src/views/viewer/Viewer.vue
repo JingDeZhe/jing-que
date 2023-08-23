@@ -30,7 +30,7 @@ steps.forEach((v) => {
 
 const firstStep = steps[0]
 
-const size = 600
+const size = ref(600)
 const polygons = ref<SVGPolygonElement[]>([])
 
 function getPolygonPoints(specie: Specie) {
@@ -43,6 +43,9 @@ function getPolygonPoints(specie: Specie) {
 }
 
 onMounted(() => {
+  const { clientWidth, clientHeight } = document.documentElement
+  const minSize = Math.min(clientWidth, clientHeight)
+  if (size.value > minSize - 20) size.value = minSize - 20
   polygons.value.forEach((el, idx) => {
     anime({
       targets: el,
@@ -60,7 +63,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="species-viewer p-1rem">
+  <div class="species-viewer">
+    <div class="title text-3xl">
+      <span class="text-[#8076a3] text-5xl">鹊</span>
+      <span class="text-red-700">桥仙</span>
+    </div>
     <svg :width="size" :height="size" viewBox="0 0 100 100">
       <polygon
         v-for="v in firstStep.species"
@@ -73,4 +80,8 @@ onMounted(() => {
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.title {
+  --at-apply: font-serif;
+}
+</style>

@@ -66,6 +66,6 @@
     }
   }
   &-viewer {
-    --at-apply: h-full overflow-hidden;
+    --at-apply: flex items-center justify-center flex-col bg-[#f2cac9] h-full overflow-hidden;
   }
 }
