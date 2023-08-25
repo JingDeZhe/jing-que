@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-import HomeView from '../views/HomeView.vue'
 import Paint from '../views/paint/Paint.vue'
 import Viewer from '../views/viewer/Viewer.vue'
 
@@ -10,7 +9,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      redirect: '/viewer',
+      redirect: '/paint',
     },
     {
       path: '/paint',

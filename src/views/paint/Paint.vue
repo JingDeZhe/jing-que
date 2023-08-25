@@ -33,6 +33,8 @@ type Specie = {
 }
 
 const activeSpecie = ref<Specie>()
+const scaleSize = 300
+const viewBox = `0 0 ${scaleSize} ${scaleSize}`
 
 const tmpSpecie = ref<Specie>(getDefaultSpecie())
 const species = ref<Specie[]>([])
@@ -40,8 +42,8 @@ function handleSelectPoint(e: MouseEvent) {
   if (isEditable.value) {
     const { left, top, height, width } = svg.value!.getBoundingClientRect()
     const { clientX, clientY } = e
-    const perX = ((clientX - left) / width) * 100
-    const perY = ((clientY - top) / height) * 100
+    const perX = ((clientX - left) / width) * scaleSize
+    const perY = ((clientY - top) / height) * scaleSize
     const len = tmpSpecie.value.points.length
     const info: PointInfo = { index: len, x: perX, y: perY }
     if (len < 2) {
@@ -162,7 +164,7 @@ window.t = species
         <img class="refer-img" :src="referImgSrc" v-if="referImgSrc" />
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 100 100"
+          :viewBox="viewBox"
           @click="handleSelectPoint"
           @contextmenu.prevent="handleSelectSpecie"
           ref="svg"
