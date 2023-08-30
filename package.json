@@ -10,7 +10,10 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
+    "@simonwep/pickr": "^1.8.2",
+    "@vueuse/core": "^10.3.0",
     "animejs": "^3.2.1",
+    "chroma-js": "^2.4.2",
     "dexie": "^3.2.4",
     "idb-keyval": "^6.2.1",
     "lodash-es": "^4.17.21",
@@ -19,11 +22,14 @@
     "panzoom": "^9.4.3",
     "pinia": "^2.1.6",
     "vue": "^3.3.4",
+    "vue-i18n": "9",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
+    "@mdi/font": "^7.2.96",
     "@tsconfig/node18": "^18.2.0",
     "@types/animejs": "^3.1.7",
+    "@types/chroma-js": "^2.4.0",
     "@types/lodash-es": "^4.17.8",
     "@types/node": "^18.17.5",
     "@types/numeral": "^2.0.2",
@@ -31,11 +37,13 @@
     "@unocss/transformer-variant-group": "^0.55.2",
     "@vitejs/plugin-vue": "^4.3.1",
     "@vue/tsconfig": "^0.4.0",
+    "@vueuse/components": "^10.4.0",
     "npm-run-all": "^4.1.5",
     "sass": "^1.66.1",
     "typescript": "~5.1.6",
     "unocss": "^0.55.2",
     "vite": "^4.4.9",
-    "vue-tsc": "^1.8.8"
+    "vue-tsc": "^1.8.8",
+    "vuetify": "^3.3.14"
   }
 }
