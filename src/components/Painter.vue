@@ -5,6 +5,7 @@ import chroma from 'chroma-js'
 import { nanoid } from 'nanoid'
 import { cloneDeep } from 'lodash-es'
 import { vOnClickOutside } from '@vueuse/components'
+import { unref } from 'vue'
 
 const props = defineProps<{
   comic?: Comic
@@ -12,6 +13,7 @@ const props = defineProps<{
 
 const scaleN = 300
 const viewBox = `0 0 ${scaleN} ${scaleN}`
+const sketchComic = ref(props.comic || getDefaultComic())
 
 const canvasCfg = ref({
   fill: '#fff',
@@ -29,10 +31,8 @@ const polygonN = ref(3)
 
 function handleSelectPoint(e: MouseEvent) {
   if (isEditable.value) {
-    const { left, top, height, width } = paper.value!.getBoundingClientRect()
     const { clientX, clientY } = e
-    const perX = ((clientX - left) / width) * scaleN
-    const perY = ((clientY - top) / height) * scaleN
+    const [perX, perY] = formatPos(clientX, clientY)
     const len = tmpSpecie.value.points.length
     const info: Point = { x: perX, y: perY }
     if (len < polygonN.value - 1) {
@@ -49,6 +49,13 @@ function handleSelectPoint(e: MouseEvent) {
     const el = e.target as HTMLElement
     selectSpecie(el)
   }
+}
+
+function formatPos(x: number, y: number) {
+  const { left, top, height, width } = paper.value!.getBoundingClientRect()
+  const perX = ((x - left) / width) * scaleN
+  const perY = ((y - top) / height) * scaleN
+  return [perX, perY]
 }
 
 function handleSelectSpecie(e: MouseEvent) {
@@ -87,6 +94,13 @@ function getDefaultSpecie() {
   return { id: nanoid(), color: canvasCfg.value.pieceColor, points: [] }
 }
 
+function getDefaultComic(): Comic {
+  return {
+    name: '',
+    pictures: [],
+  }
+}
+
 const imgInput = ref<HTMLInputElement>()
 function handleUploadImg() {
   imgInput.value!.click()
@@ -102,21 +116,58 @@ function uploadReferImg() {
 function clearReferImg() {
   referImgSrc.value = undefined
 }
+
+function addPicture() {
+  const t = cloneDeep(picture.value)
+  sketchComic.value.pictures.push(t)
+}
+
+const preventBlurPiece = ref(false)
+function toBlurPiece() {
+  if (preventBlurPiece.value) return
+  activePiece.value = undefined
+}
+
+function setSketchPicture(pic: Picture) {
+  picture.value = pic
+  tmpSpecie.value = getDefaultSpecie()
+}
 </script>
 
 <template>
   <div class="jq-painter">
-    <div class="jq-painter_list"></div>
+    <div class="jq-painter_list">
+      <div
+        class="sketch-picture"
+        v-for="picture in sketchComic.pictures"
+        @click="setSketchPicture(picture)"
+      >
+        <svg :viewBox="viewBox">
+          <g>
+            <polygon
+              v-for="v in picture"
+              :points="getPolygonPoints(v)"
+              :fill="v.color"
+              :data-id="v.id"
+              :class="{ active: activePiece?.id === v.id }"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
     <div class="jq-painter_draw" :style="{ backgroundColor: drawBg }">
       <div class="jq-painter_tools">
         <v-btn size="small" flat>
-          <v-icon icon="mdi-key"></v-icon>
+          <v-icon icon="mdi-key" @click="addPicture"></v-icon>
+        </v-btn>
+        <v-btn size="small" flat>
+          <v-icon icon="mdi-close" @click="clear"></v-icon>
         </v-btn>
       </div>
       <div
         class="jq-painter_canvas"
         :style="{ backgroundColor: canvasCfg.fill }"
-        v-on-click-outside="() => (activePiece = undefined)"
+        v-on-click-outside="toBlurPiece"
       >
         <div class="jq-painter_paper">
           <svg
@@ -160,7 +211,10 @@ function clearReferImg() {
             </div>
           </v-menu>
           <template v-if="activePiece">
-            <v-menu :close-on-content-click="false">
+            <v-menu
+              :close-on-content-click="false"
+              @update:model-value="(v) => (preventBlurPiece = v)"
+            >
               <template #activator="{ props }">
                 <div class="flex items-center gap-2">
                   <v-icon icon="mdi-triangle-outline"></v-icon>
@@ -188,7 +242,10 @@ function clearReferImg() {
 .jq-painter {
   --at-apply: flex items-stretch overflow-hidden;
   &_list {
-    --at-apply: w-[250px] bg-gray-800;
+    --at-apply: w-[150px] bg-gray-800 p-2 flex flex-col gap-1;
+    .sketch-picture {
+      --at-apply: bg-white rounded aspect-1/1;
+    }
   }
   &_draw {
     --at-apply: flex-1 overflow-hidden flex flex-col items-center justify-center bg-gray-200;
@@ -208,7 +265,7 @@ function clearReferImg() {
     }
   }
   &_tools {
-    --at-apply: rounded mb-4;
+    --at-apply: rounded mb-4 gap-2;
   }
   &_props {
     --at-apply: w-[200px] p-2 bg-gray-800 text-white flex flex-col gap-2;

@@ -13,5 +13,5 @@ export type Picture = Piece[]
 
 export type Comic = {
   name: string
-  pieces: Picture[]
+  pictures: Picture[]
 }
